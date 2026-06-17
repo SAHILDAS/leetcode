@@ -1,0 +1,12 @@
+When the interviewer asks:
+
+"How did you arrive at the optimal solution?"
+
+You can answer:
+
+First, I considered the brute-force approach where I check every pair using nested loops, 
+resulting in O(n²) time complexity. Since the follow-up asks for a better solution, 
+I observed that for each number num, I need to find target - num. Using a HashMap, 
+I can store previously seen numbers and their indices. While traversing the array once, 
+I check whether the complement already exists in the map. If it does, I've found the answer; otherwise, 
+I store the current number and continue. This reduces the time complexity to O(n) while using O(n) extra space.
